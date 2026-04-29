@@ -1,0 +1,35 @@
+<template>
+    <lightning-card class="sentiment-card">
+        <div class="container" dir="rtl">
+            <!-- Welcome Header -->
+            <div class="welcome-header">
+                <h1 class="welcome-title">שלום! ברוך הבא! 👋</h1>
+                <p class="welcome-subtitle">איך אתה מרגיש היום?</p>
+            </div>
+
+            <!-- Sentiment Options -->
+            <div class="sentiment-options">
+                <template for:each={sentiments} for:item="sentiment">
+                    <button 
+                        key={sentiment.value}
+                        class="sentiment-button"
+                        data-value={sentiment.value}
+                        onclick={handleSentimentClick}
+                        aria-label={sentiment.label}>
+                        <div class="emoji">{sentiment.emoji}</div>
+                        <div class="label">{sentiment.label}</div>
+                    </button>
+                </template>
+            </div>
+
+            <!-- Response Message -->
+            <template if:true={showMessage}>
+                <div class="message-container">
+                    <div class="sentiment-message" style={messageStyle}>
+                        <p>{sentimentMessage}</p>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

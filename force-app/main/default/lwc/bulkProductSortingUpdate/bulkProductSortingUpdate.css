@@ -1,0 +1,77 @@
+.slds-text-body_small {
+    font-size: 0.875rem;
+}
+
+.slds-list_dotted {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.slds-list_dotted li {
+    margin-bottom: 0.25rem;
+}
+
+.slds-text-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.slds-theme_info {
+    background-color: #f3f3f3;
+    border-left: 3px solid #0176d3;
+}
+
+.slds-theme_success {
+    background-color: #f3f6f4;
+    border-left: 3px solid #2e844a;
+}
+
+/* Activity Log Styles */
+.activity-log-container {
+    background-color: #f3f3f3;
+    border: 1px solid #d8dde6;
+}
+
+.activity-log-content {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid #d8dde6;
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.log-entry {
+    padding: 0.25rem 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.log-entry:empty {
+    padding: 0.5rem 0;
+}
+
+/* Custom scrollbar for activity log */
+.activity-log-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.activity-log-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.activity-log-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.activity-log-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
